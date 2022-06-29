@@ -16,8 +16,8 @@ function LoginPage() {
 
   return (
     <div>
-      <p>You must log in to view the page at {from.pathname}</p>
-      <button onClick={login}>Log in</button>
+      <p style={{color:'white',fontSize:21}}>You must log in to view the page at {from.pathname}</p>
+      <button onClick={login} style={{color:'black',fontSize:21,borderRadius:15,height:35}}>Log in</button>
     </div>
   );
 }

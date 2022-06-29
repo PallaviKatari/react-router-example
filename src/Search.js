@@ -27,10 +27,11 @@ const Search = () => {
   return (
     <div>
       <form action="" onSubmit={formSubmitHandler}>
-        <input type="text" name="term" ref={inputRef} />
-        <input type="submit" value="Search" />
+        <input type="text" name="term" style={{borderRadius:15,height:35,fontSize:21}} ref={inputRef} />
+        <br></br><br></br>
+        <input type="submit" style={{color:'black',fontSize:21,borderRadius:15,height:35}} value="Search" />
         {/* Display the search term if it is present */}
-        {term && <h2>Results for '{term}'</h2>}
+        {term && <h2 style={{color:'white',fontSize:21}}>Results for '{term}'</h2>}
       </form>
     </div>
   );

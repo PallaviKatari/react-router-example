@@ -5,17 +5,19 @@ export const Invoices = () => {
   const invoiceIds = ["50001", "50002", "50003"];
   return (
     <>
-      <h2>Invoices</h2>
+      <h2 style={{color:'white',fontSize:21}}>Invoices</h2>
       <ul className="invoices">
         {invoiceIds.map((invoiceId) => {
           return (
             <li key={invoiceId}>
-              <Link to={`/invoices/${invoiceId}`}>
+              <Link to={`/invoices/${invoiceId}`} className="navlink1">
                 View Invoice {invoiceId}
               </Link>
             </li>
           );
         })}
+        {/* It picks one of the best elements from the React Router 
+        library called Outlet to render any matching children for a particular route. */}
         <Outlet />
       </ul>
     </>
@@ -27,7 +29,7 @@ export const Invoice = () => {
 
   return (
     <>
-      <h2>Details of invoice {params.invoiceId}</h2>
+      <h2 style={{color:'white',fontSize:21}}>Details of invoice {params.invoiceId}</h2>
     </>
   );
 };

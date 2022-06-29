@@ -6,13 +6,13 @@ const Dashboard = () => {
     <div>
       <ul>
         <li>
-          <Link to="">Profile</Link>
+          <Link to="" className="navlink1">Profile</Link>
         </li>
         <li>
-          <Link to="orders">Orders</Link>
+          <Link to="orders" className="navlink1">Orders</Link>
         </li>
         <li>
-          <Link to="quotes">Quotes</Link>
+          <Link to="quotes" className="navlink1">Quotes</Link>
         </li>
       </ul>
       <div className="dashboard">
@@ -28,18 +28,18 @@ const Dashboard = () => {
 };
 
 export const Profile = () => {
-  return <h2>Profile</h2>;
+  return <h2 style={{color:'white',fontSize:21}}>Profile</h2>;
 };
 export const Orders = () => {
   const orderIds = ["10001", "10002", "10003"];
   return (
     <>
-      <h2>Orders</h2>
+      <h2 style={{color:'white',fontSize:21}}>Orders</h2>
       <ul className="orders">
         {orderIds.map((orderId) => {
           return (
             <li key={orderId}>
-              <Link to={`/dashboard/order_details/${orderId}`}>
+              <Link to={`/dashboard/order_details/${orderId}`} className="navlink1">
                 View Order {orderId}
               </Link>
             </li>
@@ -50,7 +50,7 @@ export const Orders = () => {
   );
 };
 export const Quotes = () => {
-  return <h2>Quotes</h2>;
+  return <h2 style={{color:'white',fontSize:21}}>Quotes</h2>;
 };
 export const OrderDetails = () => {
   const params = useParams();
@@ -64,8 +64,8 @@ export const OrderDetails = () => {
 
   return (
     <>
-      <h2>Details of order {params.orderId}</h2>
-      <a href="#" onClick={onBackClick}>
+      <h2 style={{color:'white',fontSize:21}}>Details of order {params.orderId}</h2>
+      <a href="#" onClick={onBackClick} style={{color:'white',fontSize:21}}>
         Back to Orders
       </a>
     </>
