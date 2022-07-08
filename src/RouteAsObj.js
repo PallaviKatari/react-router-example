@@ -55,6 +55,6 @@ const Route3 = () => {
 };
 const Child1 = () => <h2 style={{color:'white',fontSize:21}}>Child1</h2>;
 const Child2 = () => <h2 style={{color:'white',fontSize:21}}>Child2</h2>;
-const NotFound = () => <h1>NotFound</h1>;
+const NotFound = () => <h1 style={{color:'white',fontSize:21}}>NotFound</h1>;
 
 export default RouteAsObj;

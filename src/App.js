@@ -76,7 +76,7 @@ function App() {
             path="protected"
             element={
               <PrivateRoute>
-                <ProtectedPage x={1} />
+                <ProtectedPage name={'John'} />
               </PrivateRoute>
             }
           ></Route>
