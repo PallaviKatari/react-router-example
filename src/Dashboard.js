@@ -31,7 +31,7 @@ export const Profile = () => {
   return <h2 style={{color:'white',fontSize:21}}>Profile</h2>;
 };
 export const Orders = () => {
-  const orderIds = ["10001", "10002", "10003"];
+  const orderIds = ["10001", "10002", "10003","10004"];
   return (
     <>
       <h2 style={{color:'white',fontSize:21}}>Orders</h2>

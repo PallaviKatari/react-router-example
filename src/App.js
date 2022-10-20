@@ -67,8 +67,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
 
-          <Route path="about" element={<About />}></Route>
-          <Route path="dashboard/*" element={<Dashboard />}></Route>
+          <Route path="about" element={<PrivateRoute><About /></PrivateRoute>}></Route>
+          <Route path="dashboard/*" element={<PrivateRoute><Dashboard /></PrivateRoute>}></Route>
           <Route path="object_route/*" element={<RouteAsObj />}></Route>
           <Route path="search" element={<Search />}></Route>
           <Route path="public" element={<PublicPage />}></Route>
