@@ -7,14 +7,14 @@ const ProtectedPage = ({ name }) => {
   return (
     <div>
       <p style={{color:'white',fontSize:21}}>You are logged in.... Welcome back {name}</p>
-      <button style={{color:'black',fontSize:21,borderRadius:15,height:35}}
+      <button style={{color:'white',fontSize:21,backgroundColor:'transparent'}}
         onClick={() => {
           fakeAuth.logout(() =>
             navigate("/login", { state: { from: { pathname: "/protected" } } })
           );
         }}
       >
-        Sign out
+        Log out
       </button>
     </div>
   );

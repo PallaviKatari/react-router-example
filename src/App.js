@@ -65,7 +65,7 @@ function App() {
       </nav>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>}></Route>
 
           <Route path="about" element={<PrivateRoute><About /></PrivateRoute>}></Route>
           <Route path="dashboard/*" element={<PrivateRoute><Dashboard /></PrivateRoute>}></Route>

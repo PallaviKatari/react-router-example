@@ -10,7 +10,7 @@ function useQuery() {
 const Search = () => {
   const query = useQuery(); // ?term=React
 
-  const term = query.get("term"); //React
+  const term = query.get("term"); //name of the input type is 'term' React
 
   const inputRef = useRef(null); //React
   const navigate = useNavigate();
@@ -27,9 +27,10 @@ const Search = () => {
   return (
     <div>
       <form action="" onSubmit={formSubmitHandler}>
+         {/* ref={inputRef} = null */}
         <input type="text" name="term" style={{borderRadius:15,height:35,fontSize:21}} ref={inputRef} />
         <br></br><br></br>
-        <input type="submit" style={{color:'black',fontSize:21,borderRadius:15,height:35}} value="Search" />
+        <input type="submit" style={{color:'white',fontSize:21,backgroundColor:'transparent'}} value="Search" />
         {/* Display the search term only if it is present */}
         {term && <h2 style={{color:'white',fontSize:21}}>Results for '{term}'</h2>}
       </form>

@@ -31,7 +31,7 @@ export const Profile = () => {
   return <h2 style={{color:'white',fontSize:21}}>Profile</h2>;
 };
 export const Orders = () => {
-  const orderIds = ["10001", "10002", "10003","10004"];
+  const orderIds = ["10001", "10002", "10003","10004","10005"];
   return (
     <>
       <h2 style={{color:'white',fontSize:21}}>Orders</h2>
@@ -65,9 +65,9 @@ export const OrderDetails = () => {
   return (
     <>
       <h2 style={{color:'white',fontSize:21}}>Details of order {params.orderId}</h2>
-      <a href="#" onClick={onBackClick} style={{color:'white',fontSize:21}}>
+      <button onClick={onBackClick} style={{color:'white',fontSize:21,backgroundColor:'transparent'}}>
         Back to Orders
-      </a>
+      </button>
     </>
   );
 };
